@@ -170,3 +170,6 @@
 .proccess{
     filter: grayscale(100%);
 }
+.notif-jam{
+    font-size: 14px;
+}
