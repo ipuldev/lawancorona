@@ -11,7 +11,7 @@
      <div class="mr-save row mt-3 text-white">
         <div class="data-world title-data  shadow-sm col-12 bg-heal-2 rounded text-center">Sembuh <?= $sembuh['value']?><img class="icon-map" src="<?= base_url()?>asset/picture/sembuh.svg"></div>
         <div class="data-world title-data  shadow-sm col-12 bg-dead-2 rounded text-center">Meninggal <?= $meninggal['value'] ?><img class="icon-map" src="<?= base_url()?>asset/picture/meninggal.svg"></div>
-        <div class="data-world title-data  shadow-sm col-12 bg-positif-2 rounded text-center">Positif <?= $positif['value'] ?><img class="icon-map" src="<?= base_url()?>asset/picture/sakit.svg"></div>
+        <div class="data-world title-data  shadow-sm col-12 bg-positif-2 rounded text-center">Positif <?= $positif['value'] ?><img class="icon-map" src="<?= base_url()?>asset/picture/sad.png"></div>
 </div>
  <p class="mt-3">Indonesia <img class="icon-map" src="<?= base_url()?>asset/picture/indonesia.svg" alt="data-corona-indonesia"></p>
      <div class="mr-save row mt-3 mb-3">

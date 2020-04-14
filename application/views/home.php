@@ -8,7 +8,7 @@
         <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-heal rounded">Sembuh <?= $result['sembuh'] ?><img class="icon-map" src="<?= base_url()?>asset/picture/sembuh.svg"></p>
         <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-dead rounded">Meninggal  <?= $result['meninggal']?><img class="icon-map" src="<?= base_url()?>asset/picture/meninggal.svg"></p>
         <div class="col-12 mt-3">
-        <p class="title-data  shadow-sm col-6 m-auto p-3 bg-positif rounded">Positif <?= $result['positif']?><img class="icon-map" src="<?= base_url()?>asset/picture/sakit.svg"></p>
+        <p class="title-data  shadow-sm col-6 m-auto p-3 bg-positif rounded">Positif <?= $result['positif']?><img class="icon-map" src="<?= base_url()?>asset/picture/sad.png"></p>
       <?php } ?>
   </div>
 </div>
@@ -26,7 +26,7 @@
     <div class="card-body">
       <h5 class="title card-title">Informasi Penyebaran COVID-19 </h5>
       <p class="content card-text">Ketahui Lebih Rinci Perkembangan Terbaru Dari penyebaran COVID-19.</p>
-	  <p class="time card-text"><small class="text-muted">Data from kawalcorona.com</small></p>
+	  <p class="time card-text"><small class="text-muted">Data dari kawalcorona.com</small></p>
 	  <a href="<?= site_url("corona/info_data") ?>" class="btn-card btn btn-success float-right">Kunjungi</a>
     </div>
   </div>
