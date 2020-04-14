@@ -4,13 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="description" content="lawanCorona.com | Cegah dan ketahui INformasi terbaru mengenai COVID-19">
+  <meta name="keywords" content="covid-10,corona,update corona,positif corona">
+  <meta name="author" content="wedangcode">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?= base_url() ?>asset/css/bootstrap.css">
 	<link rel="stylesheet" href="<?= base_url() ?>asset/css/corona.css">
     <script src="<?= base_url() ?>asset/js/jquery/jquery.min.js"></script> 
   <link rel="shortcut icon" href="<?= base_url()?>asset/picture/virus.svg">
-	<title>Lawan-Corona</title>
+	<title>Lawan-Corona || Update covid-19</title>
 </head>
 <body>
 <ul id="navbar" class="nav justify-content-center nav-bar fixed-top shadow">
