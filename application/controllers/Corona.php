@@ -97,14 +97,15 @@ class Corona extends CI_Controller {
 		$time = date('Hi');
 		$true_time = NULL;
 		$true_day = NULL;
+		$true_time2 = NULL;
 		switch ($time) {
-			case $time >= 70 && $time <=1150:
+			case $time >= 800 && $time <=1100:
 				$true_time = 1;
 				break;
-			case $time >=110  && $time <=1760:
+			case $time >=1100  && $time <=1700:
 				$true_time = 2;
 				break;
-			case $time > 170 && $time <=2060:
+			case $time >= 1700 && $time <=2000:
 				$true_time = 3;
 				break;
 			default:break;
@@ -127,6 +128,9 @@ class Corona extends CI_Controller {
 				$true_day = 5;
 				break;
 			case 'Saturday':
+				if ($time >=1400  && $time <=1800) {
+					$true_time2 = 4;
+				}
 				$true_day = 6;
 				break;
 			case 'Sunday':
@@ -134,10 +138,20 @@ class Corona extends CI_Controller {
 				break;
 			default:break;
 		}
-
 		if ($true_time != NULL) {
-			$data = $this->ApiWhatsapp->index($true_day,$true_time);
-			return $data;
+			if ($true_day == 2) {
+				if ($true_time2 == 4) {
+					$data = $this->ApiWhatsapp->index_sabtu($true_day,$true_time,$true_time2);
+					return $data;
+				}else{
+					$data = $this->ApiWhatsapp->index($true_day,$true_time);
+					return $data;
+				}
+				
+			}else{
+				$data = $this->ApiWhatsapp->index($true_day,$true_time);
+				return $data;
+			}
 		}else{
 			return array(
 				'data' => 0,

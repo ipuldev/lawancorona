@@ -7,7 +7,7 @@
 </div>
 <div class="content">
 	<h5>
-		 Ikatan Dokter Indinesia (IDI) DIY
+		 Ikatan Dokter Indonesia (IDI) DIY
 	</h5>
 	<p>
 		 secara resmi membuka pelayanan kepada masyarakat berupa konsultasi gratis terkait Covid-19. Layanan via whatsapp (WA) ini secara resmi dimulai Kamis (09/04/2020) dan bisa dimanfaatkan oleh masyarakat untuk bertanya dan berkonsultasi.
@@ -19,7 +19,7 @@
 	</p>
 </div>
 <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document" id="role">
     <div class="modal-content">
       <div class="modal-header">
         <p class="modal-title font-weight-bold" id="exampleModalLongTitle" ></p>
@@ -51,12 +51,19 @@
  					$("#exampleModalLongTitle").html(isi);
  					var len = response.length;
  					console.log(len);
- 					if (len <= 3) {
+ 					if (len == 6) {
+ 						$("#role").attr('class','modal-dialog')
+ 						$("#isi").html(
+ 						"<div class='p-2 mb-1 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[0]['name']+"</p>"+"<small class='text-left'>"+response[0]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[1]['name']+"</p>"+"<small class='text-left'>"+response[1]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[2]['name']+"</p>"+"<small class='text-left'>"+response[2]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[3]['name']+"</p>"+"<small class='text-left'>"+response[3]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[4]['name']+"</p>"+"<small class='text-left'>"+response[4]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[5]['name']+"</p>"+"<small class='text-left'>"+response[5]['time_1']+"</small></div>"
+ 						)
+ 					}else if (len == 3) {
+ 						$("#role").attr('class','modal-dialog modal-dialog-centered')
  						$("#isi").html(
  						"<div class='p-2 mb-1 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[0]['name']+"</p>"+"<small class='text-left'>"+response[0]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[1]['name']+"</p>"+"<small class='text-left'>"+response[1]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[2]['name']+"</p>"+"<small class='text-left'>"+response[2]['time_1']+"</small></div>"
  						)
  						// console.log(len);
- 					}else{
+ 					}else if (len == 4) {
+ 						$("#role").attr('class','modal-dialog modal-dialog-centered')
  						$("#isi").html(
  						"<div class='p-2 mb-1 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[0]['name']+"</p>"+"<small class='text-left'>"+response[0]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[1]['name']+"</p>"+"<small class='text-left'>"+response[1]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[2]['name']+"</p>"+"<small class='text-left'>"+response[2]['time_1']+"</small></div>"+"<div class='mb-1 p-2 text-left bg-white border rounded shadow-sm'><p class='text-left'>"+response[3]['name']+"</p>"+"<small class='text-left'>"+response[3]['time_1']+"</small></div>"
  						)
