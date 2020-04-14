@@ -28,7 +28,6 @@ class Corona extends CI_Controller {
 		$data['api'] = $params['data'];
 		$data['rows'] = $params['rows'];
 
-		print_r($data['api']);
 		$this->template->display('home',$data);
 	}
 	public function doctor(){
