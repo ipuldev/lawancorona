@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 "><div class="tanya bg-wa col-6 ml-2 p-2 mb-2 rounded shadow-sm"><img class="icon-map-1" src="<?= base_url()?>asset/picture/whatsapp.svg" alt="tanya-dokter"><small class="ml-2 chat-text">Tanya Dokter</small></div></a>
 </div>
 <?php } elseif ($rows == 0) {?>
-  <a data-toggle="modal" data-target="#exampleModalCenter2"><div class="tanya bg-wa col-6 ml-2 p-2 mb-2 rounded shadow-sm"><img class="icon-map-1" src="<?= base_url()?>asset/picture/whatsapp.svg" alt="tanya-dokter"><small class="ml-2 chat-text">Tanya Dokter</small></div></a>
+  <a data-toggle="modal" data-target="#exampleModalCenter1"><div class="tanya bg-wa col-6 ml-2 p-2 mb-2 rounded shadow-sm"><img class="icon-map-1" src="<?= base_url()?>asset/picture/whatsapp.svg" alt="tanya-dokter"><small class="ml-2 chat-text">Tanya Dokter</small></div></a>
 
 <?php } else { ?>
   <a data-toggle="modal" data-target="#exampleModalCenter"><div class="tanya bg-wa col-6 ml-2 p-2 mb-2 rounded shadow-sm"><img class="icon-map-1" src="<?= base_url()?>asset/picture/whatsapp.svg" alt="tanya-dokter"><small class="ml-2 chat-text">Tanya Dokter</small></div></a>
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- Modal 2 -->
 
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
