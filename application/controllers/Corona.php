@@ -37,12 +37,14 @@ class Corona extends CI_Controller {
 		}else{
 			redirect('notfound');
 		}
-		$params= $this->ApiWhatsapp->get_data();
+		$params = $this->get_data_api();
+
+		$data['api'] = $params['data'];
+		$data['rows'] = $params['rows'];
 		$data['hari'] = $this->data_api_hari();
 		$params = $this->get_data_api();
 		$data['api'] = $params['data'];
 		$data['rows'] = $params['rows'];
-		// print_r($data['hari']);
 		$this->template->display('asset/doctor',$data);
 	}
 
