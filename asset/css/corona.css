@@ -1,0 +1,172 @@
+
+.nav-bar{
+    padding-top: 11px;
+    padding-bottom: 5px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+}
+.title{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.div-home{
+    margin-top: 13px;
+}
+.content{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.title{
+    font-size: 17px;
+}
+.content{
+    font-size: 14px;
+}
+.btn-card{
+    margin-top: -33px;
+}
+.card{
+    margin-top: 10px;
+}
+.plus{
+    margin-top: 54px;
+}
+.footer{
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background: black;
+    color: #fff;
+}
+#example1{
+    background: url(http://localhost/corona/asset/picture/start.jpeg);
+    background-size: cover; 
+}
+.package{
+    margin: 10px;
+}
+.title-home{
+    font-weight: bold;
+}
+.title-2{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.title-data{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.bg-heal{
+    background-color: #abd8ff;
+}
+.bg-dead{
+   background-color: #f39e9e;
+}
+.p-init{
+    padding: initial;
+
+}
+.bg-positif{
+    background-color:  #2defb9;
+}
+.margin-law{
+    margin-top: 16px;;
+}
+.shadow-corona{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.14) !important;
+}
+.mr-save{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.bg-wa{
+    background-color:  rgb(11, 194, 63);
+    color:#fff
+}
+.icon-map{
+    width: 37px;
+    padding-left: 4px;
+}
+.icon-map-1{
+    width: 40px;
+    padding-left: 4px;
+}
+.chat-text{
+    font-size: 17px;
+    font-weight: bold;
+}
+.icon-map-2{
+    width: 68px;
+    border-radius: 50%;
+    padding-left: 4px;
+}
+.btn-donate{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pager{
+    margin-top: 75px;
+}
+.bg-heal-2{
+        background-color: #26b0f1;
+}
+.caracter{
+    background: #ffffff4d;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    display: flex;
+    border-radius: 50%;
+}
+.choose:hover{
+    background: #8080804d!important;
+}
+.bg-choose{
+    color: #000!important;
+    background: #fff;
+}
+.data-world{
+    height: 84px;
+    margin: 9px 0px 12px 0px;
+    padding-top: 23px;
+    font-size: 21px;
+}
+.bg-dead-2{
+    background: #ff5050;
+}
+.bg-positif-2{
+    background: #27c127;
+}
+
+.icon-map-3{
+    width: 68px;
+    border-radius: 50%;
+}
+.map-4{
+    width:58px;
+}
+.data-row{
+    margin-right:0!important;
+    margin-left:0!important;
+}
+.bg-btn{
+    background:#f9f9f9!important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.proccess{
+    filter: grayscale(100%);
+}
