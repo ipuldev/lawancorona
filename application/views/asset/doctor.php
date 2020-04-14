@@ -14,7 +14,7 @@
 	</p>
 	<p>Dalam satu hari, pelayanan konsultasi dibagi tiga sesi yaitu pukul 08.00-11.00 WIB, pukul 11.00-17.00 WIB dan 17.00-20.00 WIB. Dalam satu hari ada 3-4 dokter yang siap memberikan konsultasi.</p>
 	<p>"
-		Layanan konsultasi gratis ini sebagai bentuk tindakan promotif kepada masyarakat umum dalam rangka pencegahan, meminimalkan angka kejadian atau morbiditas dan mortalitas kasus Covid-19. Bersama masyarakat, dokter akan lebih mampu berbuathal yang positif, dengan harapan wabahini segera terkondisikan dan berakhir
+		Layanan konsultasi gratis ini sebagai bentuk tindakan promotif kepada masyarakat umum dalam rangka pencegahan, meminimalkan angka kejadian atau morbiditas dan mortalitas kasus Covid-19. Bersama masyarakat, dokter akan lebih mampu berbuat hal yang positif, dengan harapan wabah ini segera terkondisikan dan berakhir
 		"
 	</p>
 </div>
