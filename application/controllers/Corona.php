@@ -32,10 +32,14 @@ class Corona extends CI_Controller {
 		$this->template->display('home',$data);
 	}
 	public function doctor(){
+		if ( $this->detect->isMobile() && !$this->detect->isTablet()  ) {
+ 			
+		}else{
+			redirect('notfound');
+		}
 		// $data['doctor'] = $this->ApiWhatsapp->get_data();
 		$data['hari'] = $this->data_api_hari();
 		$params = $this->get_data_api();
-
 		$data['api'] = $params['data'];
 		$data['rows'] = $params['rows'];
 		// print_r($data['hari']);
@@ -43,7 +47,13 @@ class Corona extends CI_Controller {
 	}
 
 	public function info_data(){
+		if ( $this->detect->isMobile() && !$this->detect->isTablet()  ) {
+ 			
+		}else{
+			redirect('notfound');
+		}
 		$params = $this->get_data_api();
+		$data['indo'] = $this->get_data('https://api.kawalcorona.com/indonesia');
 
 		$data['api'] = $params['data'];
 		$data['rows'] = $params['rows'];
@@ -56,6 +66,11 @@ class Corona extends CI_Controller {
 		$this->template->display('asset/info',$data);
 	}
 	public function info_negara(){
+		if ( $this->detect->isMobile() && !$this->detect->isTablet()  ) {
+ 			
+		}else{
+			redirect('notfound');
+		}
 		$params = $this->get_data_api();
 
 		$data['api'] = $params['data'];
@@ -79,17 +94,17 @@ class Corona extends CI_Controller {
 	public function get_data_api(){
 		date_default_timezone_set('Asia/Jakarta');
 		$day = date('l');
-		$time = date('H');
+		$time = date('Hi');
 		$true_time = NULL;
 		$true_day = NULL;
 		switch ($time) {
-			case $time >= 7 && $time <=11:
+			case $time >= 70 && $time <=1150:
 				$true_time = 1;
 				break;
-			case $time >=11  && $time <=17:
+			case $time >=110  && $time <=1760:
 				$true_time = 2;
 				break;
-			case $time > 17 && $time <=20:
+			case $time > 170 && $time <=2060:
 				$true_time = 3;
 				break;
 			default:break;
@@ -132,7 +147,7 @@ class Corona extends CI_Controller {
 		// return $data;
 	}
 	public function data_api_hari(){
-		$data = array("Senin","Selasa","Rabu","Kamis","Jum,at","Sabtu","Minggu");
+		$data = array("Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu");
 		return $data;
 	}
 

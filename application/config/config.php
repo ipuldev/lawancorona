@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $config['base_url'] = 'https://lawancorona.wedangcode.com/';
-// $config['base_url'] = 'http://localhost/corona/';
+// $config['base_url'] = 'http://192.168.43.184/corona/';
 
 /*
 |--------------------------------------------------------------------------

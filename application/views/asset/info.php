@@ -15,12 +15,14 @@
 </div>
  <p class="mt-3">Indonesia <img class="icon-map" src="<?= base_url()?>asset/picture/indonesia.svg" alt="data-corona-indonesia"></p>
      <div class="mr-save row mt-3 mb-3">
-        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-heal rounded">Sembuh 678</p>
-        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-dead rounded">Meninggal 306</p>
+      <?php foreach($indo as $result) {?>
+        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-heal rounded">Sembuh <?= $result['sembuh'] ?></p>
+        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-dead rounded">Meninggal  <?= $result['meninggal']?></p>
         <div class="col-12 mt-3">
-        <p class="title-data  shadow-sm col-6 m-auto p-3 bg-positif rounded">Positif 3.987</p>
-
+        <p class="title-data  shadow-sm col-6 m-auto p-3 bg-positif rounded">Positif <?= $result['positif']?></p>
+      <?php } ?>
   </div>
+
 </div>
 </div>
 <div class="col-12 text-center">
