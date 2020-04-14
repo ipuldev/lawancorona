@@ -56,6 +56,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div class="modal-body text-center">
         Maaf Untuk Jam Ini belum Tersedia
+        <p>Pelayanan 08:00 - 20:00</p>
+         <div class="donation text-center mt-4 mb-4">
+    <a href="<?= site_url('corona/doctor') ?>" class="col-11 btn btn-success btn-donate shadow">Jadwal Tanya Dokter <img class="map-4 ml-3" src="<?= base_url()?>asset/picture/doctor.svg"></a>
+  </div>
       </div>
     </div>
   </div>

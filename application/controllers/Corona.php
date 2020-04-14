@@ -17,19 +17,19 @@ class Corona extends CI_Controller {
 	public function index()
 	{
 		if ( $this->detect->isMobile() && !$this->detect->isTablet()  ) {
- 			
+ 			redirect('notfound/error');
 		}else{
 			redirect('notfound');
 		}
 
-		$data['indo'] = $this->get_data('https://api.kawalcorona.com/indonesia');
-		$params = $this->get_data_api();
+		// $data['indo'] = $this->get_data('https://api.kawalcorona.com/indonesia');
+		// $params = $this->get_data_api();
 
-		$data['api'] = $params['data'];
-		$data['rows'] = $params['rows'];
+		// $data['api'] = $params['data'];
+		// $data['rows'] = $params['rows'];
 
-		// print_r($data['api']);
-		$this->template->display('home',$data);
+		// // print_r($data['api']);
+		// $this->template->display('home',$data);
 	}
 	public function doctor(){
 		if ( $this->detect->isMobile() && !$this->detect->isTablet()  ) {
