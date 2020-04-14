@@ -77,6 +77,7 @@ class Corona extends CI_Controller {
 		return $result;
 	}
 	public function get_data_api(){
+		date_default_timezone_set('Asia/Jakarta');
 		$day = date('l');
 		$time = date('H');
 		$true_time = NULL;
