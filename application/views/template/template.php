@@ -16,9 +16,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Lawan-Corona || Update covid-19</title>
 </head>
 <body>
-<ul id="navbar" class="nav justify-content-center nav-bar fixed-top shadow">
+<ul id="navbar" class="nav nav-bar fixed-top shadow-sm pt-3 pb-2">
 	<li class="nav-item">
-		<h4 class="title"><img class="icon-map-1" src="<?= base_url()?>asset/picture/virus.svg" alt="logo-lawan-corona"> Lawan Corona</h4>
+		<p class="title"><img width="22px"  src="<?= base_url()?>asset/picture/virus.svg" alt="logo-lawan-corona"> 
+      <span class="ml-2 mt-2">Lawan Corona</span></p>
 	</li>
 </ul>
 <div class="pager"></div>

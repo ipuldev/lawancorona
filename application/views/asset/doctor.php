@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-up">
   <h5 class="text-center title-2 border-bottom col-8 m-auto">Jadwal Dokter</h5>
 <div class="data-row row justify-content-center">
 <?php $no=1;foreach($hari as $value){?>

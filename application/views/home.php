@@ -1,47 +1,64 @@
 <!-- Pengecekan Tahap awal covid-19 -->
-<div class="text-center border-bottom">
+<div class="col-sm-12 col-xm-12 div-campign">
+    <p><b class="indo">Indonesia</b>
+      <br>
+      <small>Lawan Corona #STAYATHOME</small>
+    </p>
+</div>
+<div class="text-center">
   <div class="col-12 mt-6 margin-law ">
-  <h5 class="title-2 border-bottom col-8 m-auto">Data Penyebaran COVID-19 <img class="icon-map" src="<?= base_url()?>asset/picture/indonesia.svg"></h5>
   </div>
-     <div class="mr-save row mt-3 ">
+     <div class="mr-save row mt-3 p-3">
       <?php foreach($indo as $result) {?>
-        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-heal rounded">Sembuh <?= $result['sembuh'] ?><img class="icon-map" src="<?= base_url()?>asset/picture/sembuh.svg"></p>
-        <p class="title-data  shadow-sm col-5 m-auto pt-3 pb-3 p-init bg-dead rounded">Meninggal  <?= $result['meninggal']?><img class="icon-map" src="<?= base_url()?>asset/picture/meninggal.svg"></p>
-        <div class="col-12 mt-3">
-        <p class="title-data  shadow-sm col-6 m-auto p-3 bg-positif rounded">Positif <?= $result['positif']?><img class="icon-map" src="<?= base_url()?>asset/picture/sad.png"></p>
+        <p class="title-data  shadow-sm col-12 bg-positif rounded">Terkonfirmasi 
+          <br>
+          <small class="text-positif">
+            <?= $result['positif']?>
+            </small></p>
+        <p class="title-data  shadow-sm pt-2 pb-2 p-init bg-heal rounded">Sembuh 
+          <br>
+          <small class="text-sembuh"><?= $result['sembuh'] ?></small></p>
+        <p class="title-data  shadow-sm pt-2 pb-2 p-init bg-dead rounded">Meninggal  
+          <br>
+          <small class="text-meninggal"><?= $result['meninggal']?></small></p>
       <?php } ?>
   </div>
 </div>
-<div class="col-12 mt-2">
-<!-- <small class="mt-4">Data from @officialhacker</small> -->
-</div>
 </div>
 <div class="container">
-  <div class="donation text-center mt-4 mb-4">
-    <a href="https://kitabisa.com/campaign/indonesialawancorona/donation-amount?slug=indonesialawancorona" class="btn btn-primary btn-donate shadow">DONASI LAWAN CORONA <img class="icon-map-2 bg-white" src="<?= base_url()?>asset/picture/donation.svg"></a>
-  </div>
+  <small class="init-item">Fitur</small>
 <!-- Info Penyebaran -->
-<div class="shadow-sm card">
-    <img src="<?= base_url()?>asset/picture/banner1.jpg" class="card-img-top" alt="data-penyebaran-covid-19-corona">
-    <div class="card-body">
-      <h5 class="title card-title">Informasi Penyebaran COVID-19 </h5>
-      <p class="content card-text">Ketahui Lebih Rinci Perkembangan Terbaru Dari penyebaran COVID-19.</p>
-	  <p class="time card-text"><small class="text-muted">Data dari kawalcorona.com</small></p>
-	  <a href="<?= site_url("corona/info_data") ?>" class="btn-card btn btn-success float-right">Kunjungi</a>
-    </div>
-  </div>
-  <div class="donation text-center mt-4 mb-4">
-    <a href="<?= site_url('corona/doctor') ?>" class="col-11 btn btn-success btn-donate shadow">Jadwal Tanya Dokter <img class="map-4 ml-3" src="<?= base_url()?>asset/picture/doctor.svg"></a>
-  </div>
-  <!-- Info Pencegahan -->
-<div class="shadow-sm card">
-    <img src="<?= base_url()?>asset/picture/banner2.jpg" class="proccess card-img-top" alt="cara-pencegahan-covid-19-corona">
-    <div class="card-body">
-      <h5 class="title card-title text-secondary">Cara Pencegahan COVID-19 </h5>
-      <p class="content card-text  text-secondary">Ketahui Berbagai Cara Pencegahan COVID-19 lewat bantuan aplikasi.</p>
-    <p class="time card-text"><small class="text-danger">Proses Pengembangan ..!</small></p>
-    <button class="btn-card btn btn-secondary float-right" disabled>Kunjungi</button>
-    </div>
-  </div>
+<div class="row-handle row mt-3 mb-3">
+  <a href="https://kitabisa.com/campaign/indonesialawancorona/donation-amount?slug=indonesialawancorona" class="col-4 fitur-1">
+
+</a>
+  <a href="<?= site_url('corona/doctor') ?>" class="col-4 fitur-2">
+
+</a>
+  <a href="<?= site_url("corona/info_data") ?>" class="col-4 fitur-3">
+
+</a>
+</div>
+<small class="init-item">Pencegahan COVID-19</small>
+<div class="col-12 border p-2 mt-3 rounded">
+  <img src="<?= base_url()?>asset/picture/asset_new/social_distancing.svg">
+  <span class="ml-2">Jaga Jarak <small>minimal 2 meter</small></span>
+</div>
+<div class="col-12 border p-2 mt-2 rounded">
+  <img src="<?= base_url()?>asset/picture/asset_new/washing-hands (1).svg">
+  <span class="ml-2">Cuci Tangan <small>dengan sabun & air mengalir</small></span>
+</div>
+<div class="col-12 border p-2 mt-2 rounded">
+  <img src="<?= base_url()?>asset/picture/asset_new/masker.svg">
+  <span class="ml-2">Pakai masker</span>
+</div>
+<div class="col-12 border p-2 mt-2 rounded">
+  <img src="<?= base_url()?>asset/picture/olahraga.svg" width=" 35px">
+  <span class="ml-2">Olahraga Dengan rutin</span>
+</div>
+<div class="col-12 border p-2 mt-2 rounded">
+  <img src="<?= base_url()?>asset/picture/doctor.svg" width=" 35px">
+  <span class="ml-2">Cek Ke Dokter <small>Jika ada gejala</small></span>
+</div>
 </div>
 </div>

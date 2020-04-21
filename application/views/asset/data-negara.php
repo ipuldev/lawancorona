@@ -7,7 +7,7 @@
 }
 </style>
 <!-- Pengecekan Tahap awal covid-19 -->
-<div class="container">
+<div class="container mt-up">
 <div class="text-center border-bottom">
   <div class="col-12 mt-6 margin-law ">
   <h5 class="title-2 border-bottom col-8 m-auto">Data Penyebaran COVID-19</h5>

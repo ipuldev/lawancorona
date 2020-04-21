@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
 <!-- Pengecekan Tahap awal covid-19 -->
-<div class="container">
+<div class="container mt-up">
 <div class="text-center border-bottom">
   <div class="col-12 mt-6 margin-law ">
   <h5 class="title-2 border-bottom col-8 m-auto">Data Penyebaran COVID-19</h5>
